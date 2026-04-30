@@ -1,0 +1,87 @@
+package com.sunbeam;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class StudentManagementSystem {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		List<Student> list = new ArrayList<Student>();
+				
+		int choice;
+		do {
+			 System.out.println("\n--- Student Management Menu ---");
+	            System.out.println("1. Add Student");
+	            System.out.println("2. Display All Students (using Iterator)");
+	            System.out.println("3. Search Student by Roll No");
+	            System.out.println("4. Sort by Roll No");
+	            System.out.println("5. Sort by Name");
+	            System.out.println("6. Sort by Marks");
+	            System.out.println("0. Exit");
+	            System.out.print("Enter choice: ");
+	            
+	            choice = sc.nextInt();
+	            
+	            switch(choice) {
+	            	
+	            case 1: System.out.println("Enter a roll no : ");
+	            	int rollNo = sc.nextInt();
+	            	System.out.println("Enter a Student Name : ");
+	            	 String name = sc.next();
+	            	 System.out.println("Enter a age of student : ");
+	            	 int age = sc.nextInt();
+	            	 
+	            	 list.add(new Student(name,rollNo,age));
+	            	 System.out.println("Student added Succesfully");
+	            break;
+	            case 2:
+	            	System.out.println("Enter a Roll Number : ");
+	            	int rollNumber = sc.nextInt();
+	            	
+	            	Iterator<Student> itr = list.iterator();
+	            	while(itr.hasNext()) {
+	            		System.out.println(itr.next());
+	            	}
+	            	break;
+	            case 3:
+	            	
+	            	System.out.println("Enter a roll number toi searach");
+	            	
+	            	int rollNumber1 = sc.nextInt();
+	            	
+	            	for(Student std : list) {
+	            		if(rollNumber1==std.getRollNo()) {
+	            			System.out.println(std.getStudentName());
+	            			System.out.println(std.getRollNo());
+	            			System.out.println(std.getAge());
+	            		}
+	            	}
+	            	break;
+	            case 4: 
+	            	Collections.sort(list,(s1,s2)->s1.getRollNo()-s2.getRollNo());
+	            	Iterator<Student> itr1 = list.iterator();
+	            	System.out.println("Sorted by Roll Number");
+	            	while(itr1.hasNext()) {
+	            		System.out.println(itr1.next());
+	            	}
+	            	break;
+	            case 5:
+	            	Collections.sort(list,(s1,s2)->s1.getStudentName().compareTo(s2.getStudentName()));
+	            	Iterator<Student> itr2 = list.iterator();
+	            	System.out.println("Student Sorted by Student Name ");
+	            	while(itr2.hasNext())
+	            		System.out.println(itr2.next());
+	            	break;
+	            case 6: 
+	            	Collections.sort(list,(s1,s2)->Double.compare(s1.getAge(),s2.getRollNo()));
+	            }
+		}while(choice!=0);
+	}
+
+}

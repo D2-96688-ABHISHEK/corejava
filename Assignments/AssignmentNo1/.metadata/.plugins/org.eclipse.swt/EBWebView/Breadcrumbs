@@ -1,0 +1,39 @@
+0:04:27 Tab1 StartNav28 #typed
+0:04:27 Tab1 FinishNav28
+0:04:27 Tab1 PageLoad
+0:04:35 Memory Pressure: Moderate
+0:04:45 Memory Pressure: Moderate
+0:04:55 Memory Pressure: Moderate
+0:05:05 Memory Pressure: Moderate
+0:05:15 Memory Pressure: Moderate
+0:05:25 Memory Pressure: Moderate
+0:05:35 Memory Pressure: Moderate
+0:05:45 Memory Pressure: Moderate
+0:05:55 Memory Pressure: Moderate
+0:06:05 Memory Pressure: Moderate
+0:06:15 Memory Pressure: Moderate
+0:06:25 Memory Pressure: Moderate
+0:06:35 Memory Pressure: Moderate
+0:06:45 Memory Pressure: Moderate
+0:06:55 Memory Pressure: Moderate
+0:07:05 Memory Pressure: Moderate
+0:07:15 Memory Pressure: Moderate
+0:07:25 Memory Pressure: Moderate
+0:07:35 Memory Pressure: Moderate
+0:07:45 Memory Pressure: Moderate
+0:07:55 Memory Pressure: Moderate
+0:11:58 Tab1 StartNav29 #typed
+0:11:58 Tab1 FinishNav29
+0:11:58 Tab1 PageLoad
+0:11:58 Tab1 StartNav30 #typed
+0:11:58 Tab1 FinishNav30
+0:11:58 Tab1 PageLoad
+0:12:00 Memory Pressure: Moderate
+0:12:05 Tab1 StartNav31 #typed
+0:12:05 Tab1 FinishNav31
+0:12:05 Tab1 PageLoad
+0:12:09 Tab1 StartNav32 #typed
+0:12:09 Tab1 FinishNav32
+0:12:09 Tab1 PageLoad
+0:12:10 Memory Pressure: Moderate
+0:12:20 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp

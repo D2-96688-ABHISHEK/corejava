@@ -1,0 +1,18 @@
+package com;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		try {
+			Circle obj = new Circle();
+			
+			obj.setMyX(10);
+			obj.setMyY(10);
+			obj.setDiameter(-10);
+		}
+		catch(DiameterIsNegativeException e){
+			System.out.println(e.getMessage());
+		}
+	}
+}

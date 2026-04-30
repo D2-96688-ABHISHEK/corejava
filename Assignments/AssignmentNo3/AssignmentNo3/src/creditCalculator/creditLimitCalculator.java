@@ -1,0 +1,46 @@
+package creditCalculator;
+import java.util.Scanner;
+
+public class creditLimitCalculator {
+
+	public static void main(String[] args) {
+		
+		System.out.println("### Credit Limit Calculator ###");
+		
+		Scanner sc = new Scanner(System.in);
+		String  choice ="y";
+		
+		while(choice.equalsIgnoreCase("y") ){
+			System.out.println("Enter All Details");
+			System.out.println("Enter Account Number : ");
+			Double accountNumber = sc.nextDouble();
+			
+			System.out.println("Enter beginning Balance : ");
+			Double beginningBalance = sc.nextDouble();
+			
+			System.out.println("Enter TotalCharges : ");
+			Double totalCharges = sc.nextDouble();
+			
+			System.out.println("Enter TotalCredit : ");
+			Double totalCredit = sc.nextDouble();
+			
+			System.out.println("Enter Credit limit");
+			Double creditLimit = sc.nextDouble();
+			
+			double newBalance = beginningBalance+ totalCharges+totalCredit;
+			double remain =creditLimit-newBalance;
+			
+			
+			if(newBalance>creditLimit) {
+				System.out.println(newBalance);
+				System.out.println("Credit limit Exceeded");
+			}
+			else {
+				System.out.println("Credit limit not exceeded yet ramaining : "+ remain);
+			}
+			
+			System.out.println("If you want to check Another customers limit : Enter = Y/N");
+			choice =sc.next();
+		}
+	}
+}

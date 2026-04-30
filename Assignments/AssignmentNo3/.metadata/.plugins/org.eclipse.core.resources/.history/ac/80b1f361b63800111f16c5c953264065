@@ -1,0 +1,31 @@
+package Tester;
+import com.app.geometry.Point2D;
+import java.util.Scanner;
+
+public class TestPoint {
+
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter first point Co-ordinate");
+        System.out.println("Enter x co-ordinate of point of p1 :");
+        double p1X= sc.nextDouble();
+        System.out.println("Enter y co-ordinate of point of p1 :");
+        double p1Y= sc.nextDouble();
+        
+        System.out.println("Enter Second point Co-ordinate");
+        System.out.println("Enter x co-ordinate of point of p2 :");
+        double p2X= sc.nextDouble();
+        System.out.println("Enter y co-ordinate of point of p2 :");
+        double p2Y= sc.nextDouble();
+        
+        Point2D p1= new Point2D(p1X,p1Y);
+        Point2D p2= new Point2D(p2X,p2Y);
+        
+        
+ 
+			
+		
+	}
+
+}

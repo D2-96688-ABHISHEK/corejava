@@ -1,0 +1,33 @@
+package firstPackage;
+import java.util.Scanner;
+
+public class QuestionNo3 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int choice;
+		System.out.println("Choose items and quantity : ");
+		System.out.println("1.Dosa ");
+		System.out.println("2.Samosa ");
+		System.out.println("3.Idli ");
+		
+		choice = sc.nextInt();
+		switch (choice) {
+		case 1: {
+			
+			yield type;
+		}
+case 1: {
+			
+			yield type;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + choice);
+		}
+		
+
+			
+	}
+
+}

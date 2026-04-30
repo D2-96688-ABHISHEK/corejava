@@ -1,0 +1,31 @@
+package com;
+
+public class ExceptionLineTooLong extends Exception {
+	
+	private  String message = "The String is to long";
+	private int length;
+	
+	public ExceptionLineTooLong() {
+		
+	}
+	public ExceptionLineTooLong(int length) {
+		this.length=length;
+	}
+	
+	public int getLength() {
+		return length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	@Override
+	public String getMessage() {
+		return  String .format( "%s",message);
+	}	
+}

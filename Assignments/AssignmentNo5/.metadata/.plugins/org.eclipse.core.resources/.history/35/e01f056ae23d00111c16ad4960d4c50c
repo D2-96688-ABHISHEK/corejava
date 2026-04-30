@@ -1,0 +1,14 @@
+package sdk;
+
+public class NumberOfWords {
+
+	public static void main(String[] args) {
+		
+		String str = " My name is Abhishek Prakash Mane ";
+		
+		String[] newStr = str.trim().split(" ");
+		System.out.println("Number character in string are "+ newStr.length);
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package com;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a String ");
+		
+		String str = sc.nextLine();
+		
+		int length= str.length();
+		
+		try {
+			if(str.length()>80) {
+				throw new ExceptionLineTooLong(length);
+			}
+			else {
+				System.out.println("String is valid ");
+			}
+		}
+		catch(ExceptionLineTooLong e) {
+			System.out.println("Invalid String " + e.getMessage());
+		}
+	}
+
+}
